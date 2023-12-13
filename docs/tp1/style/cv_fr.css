@@ -1,0 +1,40 @@
+.center {
+    text-align: center;
+}
+
+.indent {
+    margin-left: 20px;
+
+}
+
+.fitcontent {
+    width: fit-content;
+}
+
+p {
+    color: gray;
+    border: solid;
+}
+
+header,
+h2,
+footer {
+    background-color: lightblue;
+    padding: 1px;
+}
+
+h2,
+footer {
+    padding: 5px
+}
+
+.inLine {
+    display: flex;
+    flex-direction: row;
+    border: solid;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
