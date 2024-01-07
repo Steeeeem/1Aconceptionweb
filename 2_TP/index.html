@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TD7</title>
+		<meta charset="utf-8">
+	   <link rel="stylesheet" href="normalize.css"/>
+		<style>
+		   * {
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+
+			body { margin: 0; width: 100%; min-width: 330px; }
+			
+			/* En-tête*/
+			header {
+				width: 100%;
+				text-align: center;
+			}			
+			
+			/* Menu de navigation */
+			#menu {
+				margin-left: auto;
+				margin-right: auto;	
+				text-align: center;
+				display: table;
+				border-spacing: 2em;
+			}
+			
+			header > nav > div {
+				display: table-row;
+			}
+			
+			/* Tout bouton du menu */
+			header > nav > div > a.button {
+			    background-color: #4CAF50; /* Green */
+			    color: white;
+			    padding: 16px 32px;
+			    text-align: center;
+			    text-decoration: none;
+			    display: table-cell;
+			    border-style: solid;
+				 border-width: 1px;
+				 border-color: #4CAF50; /* Green */
+			    font-size: 1.2em;
+				 /* ------------------------------------------------------- */
+				 /* Question A: transition  et pointeur */			    
+			   
+			}
+			
+			header > nav > div > a.button:hoover {
+				background-color: white;
+				color : #4CAF50;
+			}
+			
+			
+			
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>HTML-CSS TP3</h1>
+			<nav id="menu">
+				<div>
+					<a href="exo2.html" class="button">Exo 2<span></span></a>
+					<a href="exo3.html" class="button">Exo 3<span></span></a>
+				</div>
+				<div>
+					<a href="exo4.html" class="button">Exo 4<span></span></a>
+					<a href="exo5.html" class="button">Exo 5<span></span></a>
+				</div>
+			</nav>
+		</header>
+	</body>
+</html>
