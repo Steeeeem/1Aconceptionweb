@@ -31,30 +31,69 @@
 			header > nav > div {
 				display: table-row;
 			}
-			
+
+			a.butgreen{
+				--var-background: #4CAF50;
+				--var-text: white;
+				--var-border: #4CAF50;
+			}
+			a.butred{
+				--var-background: #F44336;
+				--var-text: white;
+				--var-border: #F44336;
+			}
+			a.butblue{
+				--var-background: #008CBA;
+				--var-text: white;
+				--var-border: #008CBA;
+			}
+			a.butwhite{
+				--var-background: #e7e7e7;
+				--var-text: black;
+				--var-border: gray;
+			}
+
+
 			/* Tout bouton du menu */
 			header > nav > div > a.button {
-			    background-color: #4CAF50; /* Green */
-			    color: white;
+			    background-color: var(--var-background); /* Green */
+			    color: var(--var-text);
 			    padding: 16px 32px;
 			    text-align: center;
 			    text-decoration: none;
 			    display: table-cell;
 			    border-style: solid;
 				 border-width: 1px;
-				 border-color: #4CAF50; /* Green */
+				 border-color: var(--var-border); /* Green */
+				 border-radius: 10px;
+				box-shadow: -5px 5px 5px gray;
 			    font-size: 1.2em;
 				 /* ------------------------------------------------------- */
-				 /* Question A: transition  et pointeur */			    
+				transition: 0.6s;	    
 			   
 			}
 			
-			header > nav > div > a.button:hoover {
-				background-color: white;
-				color : #4CAF50;
+			header > nav > div > a.button:hover {
+				color : var(--var-background);
+				background-color: var(--var-text);
+
+				box-shadow: -10px 10px 5px gray;
 			}
 			
-			
+			header > nav > div > a > span{
+				position: relative
+			}
+
+			header > nav > div > a > span:after{
+				content : "»";
+				position: absolute;
+				margin-left: 0.5pc;
+				opacity: 0;
+			}
+
+			header > nav > div > a > span:after:hover{
+				opacity: 1;
+			}
 			
 		</style>
 	</head>
@@ -63,12 +102,12 @@
 			<h1>HTML-CSS TP3</h1>
 			<nav id="menu">
 				<div>
-					<a href="exo2.html" class="button">Exo 2<span></span></a>
-					<a href="exo3.html" class="button">Exo 3<span></span></a>
+					<a href="exo2.html" class="button butgreen">Exo 2<span></span></a>
+					<a href="exo3.html" class="button butred">Exo 3<span></span></a>
 				</div>
 				<div>
-					<a href="exo4.html" class="button">Exo 4<span></span></a>
-					<a href="exo5.html" class="button">Exo 5<span></span></a>
+					<a href="exo4.html" class="button butblue">Exo 4<span></span></a>
+					<a href="exo5.html" class="button butwhite">Exo 5<span></span></a>
 				</div>
 			</nav>
 		</header>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="utf-8" />
+        <title> compteur java</title>
+    </header>
+    <body>
+        <span id="cpt"></span>
+        <script>
+            var compt = 0;
+            const interval = setInterval(compteur, 2000);
+            function compteur(){
+                compt += 1;
+                document.getElementById("cpt").innerHTML = compt;
+                if(compt == 30){
+                    clearInterval(interval);
+                    document.getElementById("cpt").innerHTML = "temps dépassé";
+                }
+            }
+
+
+
+        </script>
+      
+
+    </body>
+</html>
